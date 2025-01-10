@@ -9,40 +9,78 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Nelson Zarate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="powderblue">
+<body>
     <header>
-        <a href="index.html"> Nelson Zarate</a>
-        <nav>
-            <a href="sobre.html">Sobre</a>
-            <a href="educacao.html">Educação</a>
-            <a href="experiencia.html">Experiencia</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="navbar">
+            <a class="home-button" href="index.html"> Nelson Zarate</a>
+            <nav>
+                <a href="sobre.html">Sobre</a>
+                <a href="educacao.html">Educação</a>
+                <a href="experiencia.html">Experiencia</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+       </div>
     </header>
     <main> 
+        <div class="container">
         <h1> Portfólio </h1>
-        <img src="avatar.png" width="250px" height="350px">
         <section id="Contacto">
             <h2> Contactos</h2>
-            <p> Numero de telemovel: 922 333 444   </p>
-            <p> Email: nelson_zarate@eticalgarve.com</p>
+            <p> Meu Numero de telemovel: 922 333 444   </p>
+            <p> Meu Email: nelson_zarate@eticalgarve.com</p>
 
             <form>
-                <label for="name"> Introduza o seu nome</label>
-                <input type="text" id="name" name="name"> <br>
-                <label for="phone"> Introduza o seu numero de telemovel</label>
-                <input type="number" id="phone" name="phone" placeholder="999-999-999"> <br>
-                <label for="name"> Introduza a sua região</label>
-                <select name="region" id="region" >
-                    <option value="Norte"> Norte</option>
-                    <option value="Norte"> centro</option>
-                    <option value="Norte"> sul</option>
-                </select>
-                <label for="email"> Introduza o seu email </label>
-                <input type="email" id="email" name="email"> <br>
-                <label for="message"> Introduza a sua mensagem </label>
-                <input type="text" id="message" name="message" placeholder="i would like to contact you"> <br>
+                <table class="tabela_contato">
+                    <tr>
+                        <th>
+                            <label for="name"> Introduza o seu nome</label>
+                            
+                        </th>
+                        <th>
+                            <input type="text" id="name" name="name">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="phone"> Introduza o seu numero de telemovel</label>
+                        </th>
+                        <th>
+                            <input type="number" id="phone" name="phone" placeholder="999-999-999"> <br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="name"> Introduza a sua região</label>
+                        </th>
+                        <th>
+                            <select name="region" id="region" >
+                                <option value="Norte"> Norte</option>
+                                <option value="Norte"> centro</option>
+                                <option value="Norte"> sul</option>
+                            </select>  
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email"> Introduza o seu email </label>
+                        </th>
+                        <th>
+                            <input type="email" id="email" name="email"> <br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="message"> Introduza a sua mensagem </label>
+
+                        </th>
+                        <th>
+                            <input type="text" id="message" name="message" placeholder="i would like to contact you"> <br>
+                        </th>
+                    </tr>
+                </table>
             </form>
         </section>
     </main>
