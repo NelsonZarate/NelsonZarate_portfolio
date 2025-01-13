@@ -2,8 +2,12 @@
 body {
     margin: 0;
     background-color: #F7F9FA;
-    font-family: "Roboto", serif;
+    font-family: "Montserrat Alternates", serif;
     color: #34495E;
+}
+main{
+    padding-top: 80px;
+    min-height: calc(100vh - 161px);
 }
 .navbar{
     display: flex;
@@ -51,16 +55,45 @@ header{
 .container{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 120px 20px;
+    padding: 0 20px;
     align-items: center;
 }
 .tabela_contato{
+    border: 2px solid gray;
     text-align: left;
 }
-
-footer{
+.tabela_contato tr:nth-child(odd){
+    background-color: gray;
+}
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column; /* Itens empilhados verticalmente */
+    width: 100%;
+    background-color: #1a1a2e; /* Azul-escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho do texto */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
 }
 
+footer a.links {
+    color: #f5a623; /* Cor de destaque para links (laranja suave) */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a.links:hover {
+    color: #ffffff; /* Link muda para branco ao passar o mouse */
+}
+footer a.home-button{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
