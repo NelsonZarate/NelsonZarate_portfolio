@@ -18,7 +18,7 @@ main{
     border-bottom: 1px solid rgb(241, 235, 235);
     box-shadow: 0 3px 5px rgb(69, 67, 67);
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
     
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -103,12 +103,29 @@ footer a.home-button{
     padding: 30px 10px;
     background: lightslategray;
     box-shadow: 0 4px 6px (0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 80px;
 }
 
-div #introducao{
-    display: flex;
+.introducao{
     width: 100%;
+    padding: 30px 10px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
+    border-radius: 80px;
+
+}
+
+div .painel{
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media (max-width: 1440px){
+    div .painel{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 div #projetos-destaque, .introducao{
@@ -126,6 +143,13 @@ div #projetos-destaque, .introducao{
 }
 div .imagem {
     padding: 0 30px;
+    grid-column: span 1;
+    flex-wrap: wrap;
+}
+.introduction-content{
+    grid-column: span 2;
+    flex-wrap: wrap;
+
 }
 
 .contact-button{
