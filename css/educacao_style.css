@@ -1,0 +1,39 @@
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 20px;
+}
+
+.habilidades a{
+    text-align: center;
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+.logo {
+    display: block; 
+    margin: 0 auto; 
+    width: 50px;    
+    height: 50px;
+    grid-column: span 1;
+}
+
+.logo:hover {
+    width: 60px;    
+    height: 60px;
+    filter: invert(100%);
+    
+}
+
+.boxshadow {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    padding: 30px 20px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 80px;
+}

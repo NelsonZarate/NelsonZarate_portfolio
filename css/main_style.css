@@ -1,0 +1,95 @@
+
+.boxshadow{
+    width: 300px;
+    padding: 30px 10px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
+    border-radius: 80px;
+}
+
+.introducao{
+    padding: 30px 10px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
+    border-radius: 80px;
+    width: 100%;
+}
+
+div .painel{
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+div #projetos-destaque, .introducao{
+    width: 100%;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+div .introduction_image {
+    padding: 0 30px;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+div .introduction_image > img {
+    width: 300px;
+    height: 300px;
+
+}
+.painel > h1 {
+    grid-column: span 2;
+}
+.introduction-content{
+    grid-column: span 2;
+    padding: 0 30px;
+
+}
+
+.contact-button{
+    margin: 10px;
+    background: #1ABC9C; 
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+@media (max-width: 1440px){
+    div .painel{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .introduction-content{
+        grid-column: span 1;
+    }
+
+    div .introduction_image {
+        padding: 0 30px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .painel > h1 {
+        grid-column: span 1;
+    }
+
+    .container{
+        max-width: 1000px;
+    }
+
+}
+
+@media (max-width: 767px){
+    div .painel{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

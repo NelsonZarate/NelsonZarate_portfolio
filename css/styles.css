@@ -4,6 +4,7 @@ body {
     background-color: #F7F9FA;
     font-family: "Montserrat Alternates", serif;
     color: #34495E;
+    font-size: 20px;
 }
 main{
     padding-top: 80px;
@@ -18,8 +19,7 @@ main{
     border-bottom: 1px solid rgb(241, 235, 235);
     box-shadow: 0 3px 5px rgb(69, 67, 67);
     margin-top: 10px;
-    border-radius: 10px;
-    
+    border-radius: 50px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
@@ -57,6 +57,7 @@ header{
     margin: 0 auto;
     padding: 20px;
     align-items: center;
+    justify-content: center;
 }
 .tabela_contato{
     border: 2px solid gray;
@@ -98,41 +99,35 @@ footer a.home-button{
     transition: color 0.3s ease;
 }
 
-.boxshadow{
-    width: 300px;
-    padding: 30px 10px;
-    background: lightslategray;
-    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
-    border-radius: 10px;
+@media (max-width: 1440px){
+    header{
+        max-width: 700px;
+    }
 }
 
-div #introducao{
-    display: flex;
-    width: 100%;
+@media (max-width: 767px){
+    header{
+        max-width: 500px;
+    }
+    header .home-button{
+        font-size: 17px;
+    }
+    .navbar nav{
+        font-size: 15px;
+    }
 }
 
-div #projetos-destaque, .introducao{
-    width: 100%;
-    padding: 30px 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.content{
-    display: flex; 
-    gap: 20px; 
-    justify-content: center; 
-    flex-wrap: wrap;
-}
-div .imagem {
-    padding: 0 30px;
-}
-
-.contact-button{
-    background: #1ABC9C; 
-    padding: 10px 20px; 
-    color: white; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-weight: bold;
+@media (max-width: 375px){
+    header{
+        max-width: 340px;
+    }
+    header .home-button{
+        font-size: 14px;
+    }
+    .navbar nav{
+        font-size: 10px;
+    }
+    .container{
+        font-size: 10px;
+    }
 }

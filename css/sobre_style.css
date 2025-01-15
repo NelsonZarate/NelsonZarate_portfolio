@@ -1,0 +1,33 @@
+.github_logo {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 50px;    
+    max-height: 50px;
+}
+
+.github_logo:hover {
+    max-width: 60px;    
+    max-height: 60px;
+    filter: invert(100%);
+}
+
+
+.boxshadow {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    padding: 30px 20px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 80px;
+}
+
+@media (max-width: 1440px){
+
+}
+
+@media (max-width: 767px){
+
+}
