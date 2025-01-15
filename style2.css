@@ -6,7 +6,7 @@ body {
     color: #34495e;
 }
 
-.container {
+.container , #projects{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
@@ -161,5 +161,23 @@ footer a {
 footer a:hover {
     color: #fff;
 }
-
-display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+.boxshadow{
+    width: 300px;
+    padding: 30px 10px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+div #projetos-destaque, #introducao{
+    padding: 20px 10px;;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}

@@ -97,3 +97,42 @@ footer a.home-button{
     margin: 0 10px;
     transition: color 0.3s ease;
 }
+
+.boxshadow{
+    width: 300px;
+    padding: 30px 10px;
+    background: lightslategray;
+    box-shadow: 0 4px 6px (0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+div #introducao{
+    display: flex;
+    width: 100%;
+}
+
+div #projetos-destaque, .introducao{
+    width: 100%;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+div .imagem {
+    padding: 0 30px;
+}
+
+.contact-button{
+    background: #1ABC9C; 
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
