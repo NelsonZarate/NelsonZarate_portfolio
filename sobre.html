@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,44 +8,68 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Nelson Zarate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./scripts/layout.js"></script>
+    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a class="home-button" href="index.html"> Nelson Zarate</a>
-            <nav>
-                <a href="sobre.html">Sobre</a>
-                <a href="educacao.html">Educação</a>
-                <a href="experiencia.html">Experiencia</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-       </div>
+    <nav id="navbar">
+
+    </nav>
+    
+    <header class="container">
+        <h1> About me</h1>
     </header>
-    <main> 
-        <div class="container">
-        <h1> Portfólio </h1>
-        <section id="Sobre">
-            <h2>
-                Sobre 
-            </h2>
-            <p>
-                Olá! Bem-vindo ao meu portfólio. O meu nome é Nelson Zarate, tenho 20 anos e sou estudante do curso de Programação Web na ETIC Algarve.<br>
-                 Sou apaixonado por tecnologia e estou sempre à procura de novos desafios que me permitam crescer e desenvolver as minhas competências na área do desenvolvimento web. <a href="https://github.com/NelsonZarate" target="_blank">Saiba mais sobre o meu trabalho no GitHub.</a>
-            </p>
-            
-    </main>
+
+    <section class="sobre">
+        <div class="titulo-section" id="sobre"> 
+            <h2> About Me </h2>
+        </div>
+        <div class="content-grid-about">
+            <div class="imagem">
+                <img src="imagens/nelson_zarate.png" alt="Nelson Zarate">
+            </div>
+            <div class="sobre-content">
+                <h2>Olá! O meu nome é Nelson Zarate</h2>
+                <p><strong>Web Developer</strong></p>
+                <p>eu gosto bastante de Backend e de Database. </p>
+                <ul>
+                    <li><strong>Idade:</strong> 20 anos </li>
+                    <li><strong>Phone:</strong> 927 567 890</li>
+                    <li><strong>Gmail:</strong> nelson_zarate@eticalgarve.com</li>
+                    <li><strong>Morada:</strong> Faro, Albufeira</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="educacao">
+        <div class="content-grid-educacao">
+            <div class="titulo-section" id="educacao"> <h2>Educação</h2></div>
+        <h2 id="escolas">Escolas</h2>
+        <div class="educacao-content">
+            <ul>
+                <li><strong> <p>Escola Secundária de Albufeira </p></strong>  
+                   <p> Curso Técnico de Gestão e Programação de Sistemas Informáticos (TGPSI) </p></li>
+                <li><strong> <p>ETIC Algarve </p> </strong><p> Atualmente a estudar o curso de Programação Web (PW) </p></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+        <h3>Minhas habilidades</h3>
+        <div class="habilidades">  
+            <a href="https://github.com/NelsonZarate" target="_blank"> <img src="imagens/html_logo.png" class="logo" id="logo_html" alt="logo do HTML"> </image>HTML</a>
+            <a href="https://github.com/NelsonZarate" target="_blank"> <img src="imagens/css_logo.png" class="logo" id="logo_css" alt="logo do CSS"> </image>CSS</a>
+            <a href="https://github.com/NelsonZarate" target="_blank"> <img src="imagens/js_logo.png" class="logo" id="logo_js" alt="logo do Javascript"> </image>JavaScript</a>
+            <a href="https://github.com/NelsonZarate" target="_blank"> <img src="imagens/mysql_logo.png" class="logo" id="logo_mysql" alt="logo do MySQL"> </image></a>
+        
+        </div>
+   
+
     <footer>
-        <div class="footer-content">
-            <a href="index.html" class="home-button"><p> ©Nelson Zarate</p> </a>
-            <a href="mailto:nelson_zarate@eticalgarve.com" class="links">Enviar Email</a>
-            <a href="sobre.html" class="links">Sobre</a>
-            <a href="educacao.html" class="links">Educação</a>
-            <a href="experiencia.html"class="links">Experiência</a>
-            <a href="contacto.html"class="links">Contacto</a>
+        <div class="footer" id="footer">
+            
         </div>
     </footer>
 </body>
