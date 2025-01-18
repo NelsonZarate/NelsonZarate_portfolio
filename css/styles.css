@@ -68,16 +68,17 @@ section {
     border-radius: 20px;
 }
 
-.content-grid-about {
+.sobre{
     display: grid;
     gap: 10px;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
-
 }
-.sobre{
+
+.content-grid{
     height: 100vh;
 }
+
 .sobre img {
     max-width: 300px;
     border-radius: 50%;
@@ -121,15 +122,13 @@ section.sobre > div#sobre {
     grid-column: span 2;
 }
 
-.content-grid-educacao {
+.educacao{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     align-content: center;
 }
-.educacao{
-    height: 100vh;
-}
+
 
 div#educacao {
     grid-column: span 2;
@@ -139,6 +138,14 @@ div#educacao {
     justify-self: center;
 }
 
+
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    justify-items: center;
+}
+
 .footer {
     text-align: center;
     padding: 20px;
@@ -146,15 +153,33 @@ div#educacao {
 }
 
 @media (max-width: 1440px){
+    
+    .sobre{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.sobre > div#sobre {
+        grid-column: span 2;
+    }
+    .sobre .imagem {
+        justify-items: center;
+    }
+    .sobre-content{
+        justify-items: center;
+    }
+
+    div#educacao {
+        grid-column: span 2;
+    }
+
+    .projetos{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
 @media (max-width: 767px){
 
-    .content-grid-about{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .content-grid-educacao{
+    .content-grid{
         grid-template-columns: repeat(1,1fr);
     }
     section.sobre > div#sobre {
@@ -166,19 +191,26 @@ div#educacao {
     .sobre-content{
         justify-items: center;
     }
-    
 
     div#educacao {
         grid-column: span 1;
     }
 
+    .projetos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .educacao{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .educacao-content{
+        justify-items: center;
+    }
 }
 
+
 @media (max-width: 375px){
-    .content-grid-about{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .content-grid-educacao{
+    .content-grid{
         grid-template-columns: repeat(1,1fr);
     }
     section.sobre > div#sobre {
@@ -190,9 +222,11 @@ div#educacao {
     .sobre-content{
         justify-items: center;
     }
-    
 
     div#educacao {
         grid-column: span 1;
+    }
+    .projetos{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
