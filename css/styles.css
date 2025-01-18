@@ -7,7 +7,7 @@ body {
 }
 nav {
     background: #1e1e1e;
-    padding: 1rem;
+    padding: 10px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -17,7 +17,7 @@ nav {
 }
 
 nav .logo > a {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
     color: #ffcc00;
     text-decoration: none;
@@ -26,7 +26,7 @@ nav .logo > a {
 nav .navbar a{
     list-style: none;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 5px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -53,7 +53,7 @@ nav .navbar a:hover {
 }
 
 section {
-    padding: 3rem 1rem;
+    padding: 30px 10px;
     max-width: 1200px;
     margin: auto;
 }
@@ -89,7 +89,7 @@ section {
 #projetos {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+    gap: 20px;
 }
 #sobre > h2{
     grid-column: span 3;
@@ -138,7 +138,7 @@ div#educacao {
 
 .footer {
     text-align: center;
-    padding: 2rem;
+    padding: 20px;
     background: #1e1e1e;
 }
 
