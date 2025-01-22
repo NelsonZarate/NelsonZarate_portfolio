@@ -76,7 +76,7 @@ section {
 }
 
 .content-grid{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sobre img {
@@ -141,14 +141,23 @@ div#educacao {
 
 .projetos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* se eu precisar de colocar mais projetos, ja esta configurado para 3.*/
+    grid-template-columns: repeat(1, 1fr);
     padding: 20px;
     justify-items: center;
 }
-
+.projetos a {
+    text-decoration: none;
+}
+.projetos .titulo_projetos{
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
 .habilidades{
     display: grid;
-    grid-template-columns: repeat(4,120px);
+    grid-template-columns: repeat(5,120px);
     padding: 20px;
     justify-items: center;
     justify-content: center;
@@ -158,13 +167,8 @@ div#educacao {
     padding: 10px;
     width: 90px;
     height: 90px;
+    grid-column: span 1;
 } 
-
-.contacto {
-    padding: 20px;
-    justify-items: center;
-    justify-content: center;
-}
 
 .tabela_contato{
     border: 2px solid white ;
@@ -196,17 +200,20 @@ div#educacao {
     }
 
     .projetos{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .habilidades{
-        grid-template-columns: repeat(2,110px);
+        grid-template-columns: repeat(4,110px);
     }
     
     .habilidades .logo {
         width: 80px;
         height: 80px;
     } 
+    #logo_github{
+        grid-column: span 4;
+    }
     
 
 }
@@ -249,6 +256,10 @@ div#educacao {
         width: 70px;
         height: 70px;
     } 
+    #logo_github{
+        grid-column: span 2;
+    }
+    
     
 }
 
@@ -283,5 +294,9 @@ div#educacao {
         width: 50px;
         height: 50px;
     } 
+    #logo_github{
+        grid-column: span 1;
+    }
+    
     
 }

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/css_contato.css">
     <script src="./scripts/layout.js"></script>
     <title>Portfolio</title>
 </head>
@@ -28,66 +29,39 @@
             <h2> Contactos</h2>
         </div>
         <div class="contacto">
-            <p> Meu Numero de telemovel: 922 333 444   </p>
-            <p> Meu Email: nelson_zarate@eticalgarve.com</p>
-
-            <form>
-                <table class="tabela_contato">
-                    <tr>
-                        <th>
-                            <label for="name"> Introduza o seu nome</label>
-                            
-                        </th>
-                        <th>
-                            <input type="text" id="name" name="name">
-                        </th>
-                    </tr>
-                    <tr >
-                        <th>
-                            <label for="phone"> Introduza o seu numero de telemovel</label>
-                        </th>
-                        <th>
-                            <input type="number" id="phone" name="phone" placeholder="999-999-999"> <br>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="name"> Introduza a sua região</label>
-                        </th>
-                        <th>
-                            <select name="region" id="region" >
-                                <option value="Norte"> Norte</option>
-                                <option value="Norte"> centro</option>
-                                <option value="Norte"> sul</option>
-                            </select>  
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="email"> Introduza o seu email </label>
-                        </th>
-                        <th>
-                            <input type="email" id="email" name="email"> <br>
-                        </th>
-                    </tr>
-                    <tr class="table_Row">
-                        <th>
-                            <label for="message"> Introduza a sua mensagem </label>
-
-                        </th>
-                        <th>
-                            <input type="text" id="message" name="message" placeholder="i would like to contact you"> <br>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <input type="submit" id="submit" name="submit">
-                        </th>
-                    </tr>
-                </table>
+            <p>Meu Número de Telemóvel: 922 333 444</p>
+            <p>Meu Email: nelson_zarate@eticalgarve.com</p>
+        
+            <form class="form-contato">
+                <div class="formulario">
+                    <label for="name">Introduza o seu nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome">
+                </div>
+                <div class="formulario">
+                    <label for="phone">Introduza o seu número de telemóvel:</label>
+                    <input type="number" id="phone" name="phone" placeholder="999-999-999">
+                </div>
+                <div class="formulario">
+                    <label for="region">Introduza a sua região:</label>
+                    <select name="region" id="region">
+                        <option value="Norte">Norte</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Sul">Sul</option>
+                    </select>
+                </div>
+                <div class="formulario">
+                    <label for="email">Introduza o seu email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email">
+                </div>
+                <div class="formulario">
+                    <label for="message">Introduza a sua mensagem:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
+                </div>
+                <div class="formulario">
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </div>
-        
         
     </section>
    
