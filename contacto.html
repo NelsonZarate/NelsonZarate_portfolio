@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/css_contato.css">
     <script src="./scripts/layout.js"></script>
+    <script src="./scripts/contact-validation.js" defer></script>
+    <script src="./scripts/contact-validation.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -32,14 +34,16 @@
             <p>Meu Número de Telemóvel: 922 333 444</p>
             <p>Meu Email: nelson_zarate@eticalgarve.com</p>
         
-            <form class="form-contato">
+            <form class="form-contato" id="formulario">
                 <div class="formulario">
-                    <label for="name">Introduza o seu nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Seu nome">
+                    <label for="name"><a style="color: red;">*</a> Introduza o seu nome:</label>
+                    <input type="text" id="nome" name="name" placeholder="Seu nome">
+                    <p id="error_name_label"></p>
                 </div>
                 <div class="formulario">
-                    <label for="phone">Introduza o seu número de telemóvel:</label>
-                    <input type="number" id="phone" name="phone" placeholder="999-999-999">
+                    <label for="telemovel"><a style="color: red;">*</a> Introduza o seu número de telemóvel:</label>
+                    <input type="number" id="telemovel" name="phone" placeholder="999-999-999">
+                    <p id="error_telemovel_label"></p>
                 </div>
                 <div class="formulario">
                     <label for="region">Introduza a sua região:</label>
@@ -50,15 +54,16 @@
                     </select>
                 </div>
                 <div class="formulario">
-                    <label for="email">Introduza o seu email:</label>
+                    <label for="email"><a style="color: red;">*</a> Introduza o seu email:</label>
                     <input type="email" id="email" name="email" placeholder="Seu email">
+                    <p id="error_email_label"></p>
                 </div>
                 <div class="formulario">
                     <label for="message">Introduza a sua mensagem:</label>
                     <textarea id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                 </div>
                 <div class="formulario">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="submit"> Enviar</button>
                 </div>
             </form>
         </div>
@@ -71,5 +76,6 @@
             
         </div>
     </footer>
+   
 </body>
 </html>
