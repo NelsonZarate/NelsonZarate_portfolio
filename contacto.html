@@ -14,15 +14,16 @@
     <link rel="stylesheet" href="css/css_contato.css">
     <script src="./scripts/layout.js"></script>
     <script src="./scripts/contact-validation.js" defer></script>
-    <script src="./scripts/contact-validation.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" data-aos="fade-down">
         
     </nav>
     
-    <header class="container">
+    <header class="container" data-aos="fade-up">
         <h1> Contactos </h1>
     </header>
 
@@ -30,22 +31,22 @@
         <div class="titulo-section" id="Contactos">
             <h2> Contactos</h2>
         </div>
-        <div class="contacto">
-            <p>Meu Número de Telemóvel: 922 333 444</p>
-            <p>Meu Email: nelson_zarate@eticalgarve.com</p>
+        <div class="contacto" data-aos="zoom-in" data-aos-delay="100">
+            <p data-aos="zoom-in" data-aos-delay="100">Meu Número de Telemóvel: 922 333 444</p>
+            <p data-aos="zoom-in" data-aos-delay="200">Meu Email: nelson_zarate@eticalgarve.com</p>
         
             <form class="form-contato" id="formulario">
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="400">
                     <label for="name"><a style="color: red;">*</a> Introduza o seu nome:</label>
                     <input type="text" id="nome" name="name" placeholder="Seu nome">
                     <p id="error_name_label"></p>
                 </div>
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="600">
                     <label for="telemovel"><a style="color: red;">*</a> Introduza o seu número de telemóvel:</label>
-                    <input type="number" id="telemovel" name="phone" placeholder="999-999-999">
+                    <input type="number" id="telemovel" name="telemovel" placeholder="999999999">
                     <p id="error_telemovel_label"></p>
                 </div>
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="800">
                     <label for="region">Introduza a sua região:</label>
                     <select name="region" id="region">
                         <option value="Norte">Norte</option>
@@ -53,16 +54,16 @@
                         <option value="Sul">Sul</option>
                     </select>
                 </div>
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="1000">
                     <label for="email"><a style="color: red;">*</a> Introduza o seu email:</label>
                     <input type="email" id="email" name="email" placeholder="Seu email">
                     <p id="error_email_label"></p>
                 </div>
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="1200">
                     <label for="message">Introduza a sua mensagem:</label>
                     <textarea id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                 </div>
-                <div class="formulario">
+                <div class="formulario" data-aos="zoom-in" data-aos-delay="1400">
                     <button type="submit" id="submit"> Enviar</button>
                 </div>
             </form>
@@ -72,7 +73,7 @@
    
 
     <footer>
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" data-aos="fade-up">
             
         </div>
     </footer>

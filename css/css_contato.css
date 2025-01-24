@@ -42,6 +42,7 @@
     border-radius: 4px;
     background: #fff;
     color: #333;
+    transition: border-color 0.3s;
 }
 
 .formulario input:focus,
@@ -50,6 +51,16 @@
     border-color: #f5a623;
     outline: none;
     box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.formulario input.valid {
+    border-color: #28a745;
+    background-color: #e6ffed;
+}
+
+.formulario input.invalid {
+    border-color: #dc3545; 
+    background-color: #ffe6e6;
 }
 
 .formulario button {

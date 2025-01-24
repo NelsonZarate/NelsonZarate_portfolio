@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Nelson Zarate  | Portfólio</title>
+    <title> Nelson Zarate | Portfólio</title>
     <meta charset="UTF-8">
-    <meta name="description" content=" Portafolio do Nelson Zarate">
+    <meta name="description" content="Portfólio do Nelson Zarate">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Nelson Zarate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +11,37 @@
     <link rel="icon" type="image/x-icon" href="imagens/favicon.ico?v=2">
     <link rel="stylesheet" href="css/styles.css">
     <script src="./scripts/layout.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
 </head>
 <body>
-    <nav id="navbar">
-
+    <nav id="navbar" data-aos="fade-down">
+      
     </nav>
 
     <header class="container">
-        <h1>Bem-vindo ao Meu Portfólio</h1>
-        <h2>Nelson Zarate</h2>
-        <p>Web Developer</p>
+        <h1 data-aos="fade-up">Bem-vindo ao Meu Portfólio</h1>
+        <h2 data-aos="fade-up" data-aos-delay="200">Nelson Zarate</h2>
+        <p data-aos="fade-up" data-aos-delay="400">Web Developer</p>
     </header>
 
     <section id="Projetos" class="content-grid">
-        <div class="titulo-section"> <h1> Projetos </h1> </div>
+        <div class="titulo-section" data-aos="fade-up"> 
+            <h1>Projetos</h1> 
+        </div>
         <div class="projetos">
-            <div class="boxshadow"> 
+            <div class="boxshadow" data-aos="zoom-in" data-aos-delay="300"> 
                 <a href="https://github.com/Etic-help/PW24-26" target="_blank">
-                <img src="imagens/etic-help.png" alt="etic-help" style="width: 100%; border-radius: 10px;">
-                <h3 class="titulo_projetos">Etic help</h3> </a>
-                <p>Desenvolvimento de um repositorio onde os alunos do curso podem estudar dos meus resumos tirados na sala de aula.</p>
+                    <img src="imagens/etic-help.png" alt="etic-help" style="width: 100%; border-radius: 10px;">
+                    <h3 class="titulo_projetos">Etic Help</h3> 
+                </a>
+                <p>Desenvolvimento de um repositório onde os alunos do curso podem estudar utilizando os resumos tirados em sala de aula.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" data-aos="fade-up">
             
         </div>
     </footer>
