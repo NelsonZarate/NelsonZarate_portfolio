@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 1000, 
+        once: true, 
+    });
+});
+
 async function loadNavbar() {
     const response = await fetch("navbar.html");
     const navbarHtml = await response.text();
@@ -16,10 +23,3 @@ async function loadFooter() {
 
 loadNavbar();
 loadFooter();
-
-document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-        duration: 1000, 
-        once: true, 
-    });
-});

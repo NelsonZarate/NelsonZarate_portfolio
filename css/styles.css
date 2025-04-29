@@ -60,16 +60,21 @@ section {
     max-width: 1200px;
     margin: auto;
 }
-.projeto{
+.card{
     width: 300px;
     padding: 30px 10px;
     background: rgb(6, 6, 6);
     box-shadow: 0 4px 6px (0, 0, 0, 0.1);
     border-radius: 20px;
 }
-.projeto > img {
+.card img {
     width: 100%;
     border-radius: 10px;
+}
+.card:hover{
+    transition-delay: 0ms !important;
+    transform: translateY(-10px)!important; 
+    box-shadow: 0 4px 6px (0, 0, 0, 0.2);
 }
 .sobre{
     display: grid;
@@ -93,11 +98,6 @@ section {
     justify-items: end;
 }
 
-#projetos {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
 #sobre > h2{
     grid-column: span 3;
 }
@@ -144,8 +144,7 @@ div#educacao {
 
 .projetos{
     display: grid;
-    /* se eu precisar de colocar mais projetos, ja esta configurado para 3.*/
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 20px;
     justify-items: center;
 }
