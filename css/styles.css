@@ -70,6 +70,7 @@ section {
 .card img {
     width: 100%;
     border-radius: 10px;
+    height: 300px;
 }
 .card:hover{
     transition-delay: 0ms !important;
@@ -144,7 +145,7 @@ div#educacao {
 
 .projetos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     justify-items: center;
 }
